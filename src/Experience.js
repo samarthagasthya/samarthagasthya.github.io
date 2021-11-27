@@ -5,6 +5,7 @@ import data from '../data.json'
 import { useRef } from "react";
 import useAnimate from "./useAnimate";
 const { experience } = data
+import experienceImg from "../public/experience.svg"
 
 const useStyles = makeStyles(theme => ({
     cont: {
@@ -74,12 +75,12 @@ export default function Experience() {
                 <Hidden mdDown>
                     <Fade in={animate} style={{ transitionDelay: '250ms' }}>
                         <div>
-                            <Image
+                            {experienceImg&&(<Image
                                 alt="Experience"
-                                src="/experience.svg"
+                                src={experienceImg}
                                 width="996.46"
                                 height="828.18"
-                            />
+                            />)}
                         </div>
                     </Fade>
                 </Hidden>
@@ -117,11 +118,11 @@ export default function Experience() {
                                                         <CardHeader
                                                             avatar={
                                                                 <Avatar variant="rounded">
-                                                                    <Image
+                                                                    {thumbnail&&(<Image
                                                                         alt={`${organization} logo`}
                                                                         src={thumbnail}
                                                                         layout="fill"
-                                                                    />
+                                                                    />)}
                                                                 </Avatar>
                                                             }
                                                             title={organization}

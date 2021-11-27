@@ -19,8 +19,8 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-export async function getStaticProps() {
-  const baseURI = projects.baseURI
+/*export async function getStaticProps() {
+  /*const baseURI = projects.baseURI
   const repos = projects.repositories
   const reqInit = {
     headers: { 
@@ -39,14 +39,15 @@ export async function getStaticProps() {
       }
     )
   );
-
+    
   return {
     props: {
       projects: fullRepoData
     },
     revalidate: 60
   }
-}
+  return {};
+}*/
 
 export default function Index({ projects, setTheme }) {
 

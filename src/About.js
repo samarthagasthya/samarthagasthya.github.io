@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { iconify } from "./util";
 import Cancel from "@material-ui/icons/Cancel";
 const { about } = data
+import profile from "../public/profile.jpg"
 
 const dpx = about.social.length*10 - 2
 
@@ -64,11 +65,11 @@ export default function About() {
             <Grid container direction="column" item xs={12} lg={6} spacing={2} justify="center" alignItems="center">
                 <Grid item xs={12}>
                     <Avatar variant="rounded" className={classes.dp}>
-                        <Image
+                        {profile&&(<Image
                             alt="Display Picture"
-                            src={about.picture}
+                            src={profile}
                             layout="fill"
-                        />
+                        />)}
                     </Avatar>
                 </Grid>
                 <Grid container item xs={12} spacing={2} justify="center">

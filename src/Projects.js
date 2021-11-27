@@ -3,6 +3,7 @@ import { RepoForkedIcon, RepoIcon, StarIcon } from '@primer/octicons-react';
 import Image from 'next/image'
 import { useRef } from "react";
 import useAnimate from "./useAnimate";
+import projectsImg from "../public/projects.svg";
 
 const useStyles = makeStyles(theme => ({
     cont: {
@@ -33,12 +34,12 @@ export default function Projects({ data }) {
                 <Hidden mdDown>
                     <Fade in={animate} style={{ transitionDelay: '250ms' }}>
                         <div>
-                            <Image
+                            {projectsImg&&(<Image
                                 alt="Projects"
-                                src="/projects.svg"
+                                src={projectsImg}
                                 width="1144"
                                 height="617.32"
-                            />
+                            />)}
                         </div>
                     </Fade>
                 </Hidden>

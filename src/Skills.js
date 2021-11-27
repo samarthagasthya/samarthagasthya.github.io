@@ -8,6 +8,7 @@ import data from '../data.json'
 import useAnimate from "./useAnimate";
 import { iconify } from "./util";
 const { skills } = data
+import skillImg from "../public/skill.svg";
 
 const wrapper = (sk = []) => sk.map(v => {
     const ic = simpleIcons.get(typeof v === "string" ? iconify(v) : iconify(v.icon)) || {
@@ -72,12 +73,12 @@ export default function Skills() {
                 <Hidden mdDown>
                     <Fade in={animate} style={{ transitionDelay: '100ms' }}>
                         <div>
-                            <Image
+                            {skillImg&&(<Image
                                 alt="Skills"
-                                src="/skill.svg"
+                                src={skillImg}
                                 width="1139"
                                 height="655"
-                            />
+                            />)}
                         </div>
                     </Fade>
                 </Hidden>
