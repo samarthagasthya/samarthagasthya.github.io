@@ -3,6 +3,8 @@ import Typewriter from "typewriter-effect";
 import { Fade } from "react-awesome-reveal";
 import Social from "./Social";
 import FallbackSpinner from "./FallbackSpinner";
+import CarFrame from "./Car";
+import Footer from "./Footer";
 
 const styles = {
     nameStyle: {
@@ -30,7 +32,7 @@ const Home = () => {
     const [data,setData] = useState(d);
 
 
-    return data ? (
+    return (<> { data ? (
         <Fade>
             <div style={styles.mainContainer}>
                 <h1 style={styles.nameStyle}>{data?.name}</h1>
@@ -45,9 +47,16 @@ const Home = () => {
                     }} />
                 </div>
                 <Social />
+
+
+                <CarFrame/>
             </div>
         </Fade>
-    ): <FallbackSpinner />;
+    ): <FallbackSpinner />}
+    <div>Namaste from India</div>
+    <Footer/>
+    </>
+    )
 
 }
 

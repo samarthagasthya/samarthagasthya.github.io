@@ -106,8 +106,8 @@ const styles = {
                         ):(
                             <InternalLink
                             key={s.title} onClick={()=>setExpanded(false)}
-                            exact={i===0}
-                            activeClassName="navbar__link--active" className="navbar__link"
+                            end={i===0}
+                            activeclassname="navbar__link--active" className="navbar__link"
                             to={s.href} theme={theme} >
                                 {s.title}
                             </InternalLink>

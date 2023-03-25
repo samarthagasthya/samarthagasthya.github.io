@@ -5,8 +5,9 @@ import {Fade} from "react-awesome-reveal";
 import { Container } from "react-bootstrap";
 import Header from "./Header";
 import FallbackSpinner from "./FallbackSpinner";
-import  {SiReact,SiKotlin, SiC, SiCplusplus, SiPython, SiRuby, SiJavascript, SiPhp, SiAssemblyscript, SiCsharp, SiSwift, SiDart, SiTypescript, SiRust , SiCoffeescript, SiCockpit, SiMysql, SiMongodb, SiPostgresql, SiAndroid, SiNodedotjs, SiIos, SiFlutter, SiElectron, SiNextdotjs, SiAndroidstudio, SiGit, SiDocker, SiGooglecloud, SiAmazonaws, SiJson, SiApollographql, SiGraphql} from "@icons-pack/react-simple-icons";
+import  {SiReact,SiKotlin, SiC, SiCplusplus, SiPython, SiRuby, SiJavascript, SiPhp, SiAssemblyscript, SiCsharp, SiSwift, SiDart, SiTypescript, SiRust , SiCoffeescript, SiCockpit, SiMysql, SiMongodb, SiPostgresql, SiAndroid, SiNodedotjs, SiIos, SiFlutter, SiElectron, SiNextdotjs, SiAndroidstudio, SiGit, SiDocker, SiGooglecloud, SiAmazonaws, SiJson, SiApollographql, SiGraphql, SiHtml5, SiCss3, SiGo, SiBootstrap, SiNetlify, SiVuedotjs, SiAngular, SiRedux, SiVercel, SiMaterialdesign, SiGradle, SiApachemaven, SiUnity, SiFirebase, SiExpress} from "@icons-pack/react-simple-icons";
 import { ThemeContext } from "styled-components";
+import Footer from "./Footer";
 
 const styles = {
     iconStyle: {
@@ -83,6 +84,18 @@ const d = {
                     icon: "ts",
                     title: "TypeScript"
                 },
+                {
+                    icon: "html",
+                    title: "HTML"
+                },
+                {
+                    icon: "css",
+                    title: "CSS"
+                },
+                {
+                    icon: "go",
+                    title: "GoLang"
+                },
         ]},
         {
             title: "Databases",
@@ -128,6 +141,30 @@ const d = {
                     title: "Electron"
                 },
                 {
+                    icon: "bts",
+                    title: "Bootstrap"
+                },
+                {
+                    icon: "ng",
+                    title: "Angular"
+                },
+                {
+                    icon: "vue",
+                    title: "Vue"
+                },
+                {
+                    icon: "redux",
+                    title: "redux"
+                },
+                {
+                    icon: "ejs",
+                    title: "Express.js"
+                },
+                {
+                    icon: "mui",
+                    title: "Material-ui"
+                },
+                {
                     icon: "ios",
                     title: "iOS"
                 },
@@ -142,6 +179,14 @@ const d = {
                 {
                     icon: "graphql",
                     title: "GraphQL"
+                },
+                {
+                    icon: "netlify",
+                    title: "Netlify"
+                },
+                {
+                    icon: "vercel",
+                    title: "Vercel"
                 }
             ]
         },
@@ -168,6 +213,22 @@ const d = {
                     icon: "aws",
                     title: "AWS"
                 },
+                {
+                    icon: "gradle",
+                    title: "Gradle"
+                }, 
+                {
+                    icon: "maven",
+                    title: "Maven"
+                },
+                {
+                    icon: "fb",
+                    title: "Firebase"
+                },
+                {
+                    icon: "unity",
+                    title: "Unity"
+                }
             ]
     }
 ]};
@@ -246,6 +307,36 @@ const Skills = (props) => {
             return <SiJson/>
         } else if(icon==="graphql") {
             return <SiGraphql/>
+        } else if(icon==="html") {
+            return <SiHtml5/>
+        } else if(icon==="css") {
+            return <SiCss3/>
+        } else if(icon==="go") {
+            return <SiGo/>
+        } else if(icon==="bts") {
+            return <SiBootstrap/>
+        } else if(icon==="netlify") {
+            return <SiNetlify/>
+        } else if(icon==="vue") {
+            return <SiVuedotjs/>
+        } else if(icon==="ng") {
+            return <SiAngular/>
+        } else if(icon==="redux") {
+            return <SiRedux/>
+        } else if(icon==="vercel") {
+            return <SiVercel/>
+        } else if(icon==="mui") {
+            return <SiMaterialdesign/>
+        } else if(icon==="gradle") {
+            return <SiGradle/>
+        } else if(icon==="maven") {
+            return <SiApachemaven/>
+        } else if(icon==="unity") {
+            return <SiUnity/>
+        } else if(icon==="fb") {
+            return <SiFirebase/>
+        } else if(icon==="ejs") {
+            return <SiExpress/>
         }
     }
 

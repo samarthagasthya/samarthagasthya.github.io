@@ -6,6 +6,7 @@ import { Fade } from 'react-awesome-reveal';
 import Header from './Header';
 import routes from '../utils/routes';
 import FallbackSpinner from './FallbackSpinner';
+import Footer from './Footer';
 
 const styles = {
   introTextContainer: {
@@ -26,7 +27,7 @@ const styles = {
 
 const d = {
   about: "Currently working as Member of Technical Staff @ 42gears. \n\n Graduate in Electronics & Communications Engineering from DSCE \n\n ",
-  imageSource: "images/about/profile.png"
+  imageSource: "images/about/profile.jpg"
   
 }
 
@@ -54,7 +55,7 @@ function About(props) {
                     {parseIntro(data.about)}
                   </Col>
                   <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" />
+                    <img src={data?.imageSource} alt="profile" style={{width: 400, height: 300}} />
                   </Col>
                 </Row>
               </Fade>

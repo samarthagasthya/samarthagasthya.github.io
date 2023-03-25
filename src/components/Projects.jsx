@@ -6,6 +6,7 @@ import { Fade } from 'react-awesome-reveal';
 import Header from './Header';
 import ProjectCard from './ProjectCard';
 import FallbackSpinner from './FallbackSpinner';
+import Footer from './Footer';
 
 const styles = {
   containerStyle: {

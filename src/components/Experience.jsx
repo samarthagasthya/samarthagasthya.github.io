@@ -9,6 +9,7 @@ import Header from './Header';
 import FallbackSpinner from './FallbackSpinner';
 import '../styles/experience.css';
 import 'react-vertical-timeline-component/style.min.css';
+import Footer from './Footer';
 
 const styles = {
   ulStyle: {
@@ -56,7 +57,7 @@ const d = {
           subtitle: "Dwaiapayana Technologies",
           workType: "Internship",
           workDescription: [
-              "Developed the customer-centric android applications.",
+              "Developed multiple customer-centric android applications.",
           ],
           dateText: "03/2020 – 06/2020"
       }

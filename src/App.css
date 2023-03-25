@@ -4,8 +4,16 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 100vh;
-  flex-direction: row;
+  min-height: 100vh;
+  flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+}
+
+.footer {
+  margin-top: auto;
 }
 
 .navbar-custom {
