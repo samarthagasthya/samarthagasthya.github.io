@@ -1,10 +1,9 @@
-import React , {useEffect,useState,useContext} from "react";
+import {useContext} from "react";
 import { SocialIcon } from "react-social-icons";
 import { ThemeContext } from "styled-components";
-import routes from "../utils/routes"
 
 
-const d = {
+const data = {
     social: [
         {
             network : "linkedin",
@@ -23,7 +22,6 @@ const d = {
 
 const Social = () => {
     const theme = useContext(ThemeContext);
-    const [data,setData] = useState(d);
     
 
     return (

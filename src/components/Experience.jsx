@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useContext } from 'react';
-import { VerticalTimeline,TimelineItem, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import { useContext } from 'react';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { Container } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
 import PropTypes from 'prop-types';
@@ -9,7 +9,6 @@ import Header from './Header';
 import FallbackSpinner from './FallbackSpinner';
 import '../styles/experience.css';
 import 'react-vertical-timeline-component/style.min.css';
-import Footer from './Footer';
 
 const styles = {
   ulStyle: {
@@ -31,7 +30,7 @@ const styles = {
   },
 };
 
-const d = {
+const data = {
   experiences: [
       {
           title: "Member of Technical Staff",
@@ -67,7 +66,6 @@ const d = {
 function Experience(props) {
   const theme = useContext(ThemeContext);
   const { header } = props;
-  const [data, setData] = useState(d);
 
   return (
     <>

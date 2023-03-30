@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Container, Col, Row } from 'react-bootstrap';
 import * as PropTypes from 'prop-types';
 import { Fade } from 'react-awesome-reveal';
 import Header from './Header';
-import routes from '../utils/routes';
 import FallbackSpinner from './FallbackSpinner';
-import Footer from './Footer';
 
 const styles = {
   introTextContainer: {
@@ -25,7 +22,7 @@ const styles = {
   },
 };
 
-const d = {
+const data = {
   about: "Currently working as Member of Technical Staff @ 42gears. \n\n Graduate in Electronics & Communications Engineering from DSCE \n\n ",
   imageSource: "images/about/profile.jpg"
   
@@ -33,7 +30,6 @@ const d = {
 
 function About(props) {
   const { header } = props;
-  const [data, setData] = useState(d);
 
   const parseIntro = (text) => (
     <ReactMarkdown

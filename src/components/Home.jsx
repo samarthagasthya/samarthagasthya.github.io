@@ -1,10 +1,9 @@
-import React,{useState,useEffect} from "react";
 import Typewriter from "typewriter-effect";
 import { Fade } from "react-awesome-reveal";
 import Social from "./Social";
 import FallbackSpinner from "./FallbackSpinner";
-import CarFrame from "./Car";
 import Footer from "./Footer";
+import CarFrame from "./Car";
 
 const styles = {
     nameStyle: {
@@ -22,14 +21,13 @@ const styles = {
     }
 };
 
-const d = {
+const data = {
     name: "Samarth MS",
     subheader: "TechGeek & Aviation Enthusiast",
     roles: ["Android Developer", "Web Developer" , "Cross-platform Application Developer", "IoT developer"]
 }
 
 const Home = () => {
-    const [data,setData] = useState(d);
 
 
     return (<> { data ? (
@@ -47,13 +45,10 @@ const Home = () => {
                     }} />
                 </div>
                 <Social />
-
-
-                <CarFrame/>
             </div>
         </Fade>
     ): <FallbackSpinner />}
-    <div>Namaste from India</div>
+    <CarFrame />
     <Footer/>
     </>
     )

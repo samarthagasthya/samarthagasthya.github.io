@@ -1,8 +1,7 @@
 import { Navbar,Nav , Container } from "react-bootstrap";
-import React , {useEffect, useState, useContext} from "react";
+import {useState, useContext} from "react";
 import { NavLink } from "react-router-dom";
 import styled, {ThemeContext} from "styled-components";
-import routes from "../utils/routes";
 import { useNavigate } from "react-router";
 import ThemeToggle from "./ThemeToggle";
 
@@ -36,7 +35,7 @@ const styles = {
  }
  `;
 
- const d = {
+ const data = {
     logo : {
         source: "images/logo.png",
         height : 45,
@@ -68,7 +67,6 @@ const styles = {
 }
  const NavBar = () => {
     const theme = useContext(ThemeContext);
-    const [data,setData] = useState(d);
     const [expanded,setExpanded] = useState(false);
 
     return (
@@ -78,13 +76,13 @@ const styles = {
             <Container>
                 {data?.logo && (
                     <Navbar.Brand href="/">
-                        <img src={data?.logo?.source}
+                        {/* <img src={data?.logo?.source}
                          className="d-inline=block align-top"
                          alt="main logo"
                          style= {
                             data?.logo?.height && data?.logo?.width ? {height: data?.logo?.height, width: data?.logo?.width}
                             :styles.logoStyle
-                         } />
+                         } /> */}
                     </Navbar.Brand>
                 )}
                 <Navbar.Toggle

@@ -1,13 +1,10 @@
-import React , {useContext, useEffect,useState} from "react";
 import ReactMarkdown from "react-markdown";
 import * as PropTypes from "prop-types";
 import {Fade} from "react-awesome-reveal";
 import { Container } from "react-bootstrap";
 import Header from "./Header";
 import FallbackSpinner from "./FallbackSpinner";
-import  {SiReact,SiKotlin, SiC, SiCplusplus, SiPython, SiRuby, SiJavascript, SiPhp, SiAssemblyscript, SiCsharp, SiSwift, SiDart, SiTypescript, SiRust , SiCoffeescript, SiCockpit, SiMysql, SiMongodb, SiPostgresql, SiAndroid, SiNodedotjs, SiIos, SiFlutter, SiElectron, SiNextdotjs, SiAndroidstudio, SiGit, SiDocker, SiGooglecloud, SiAmazonaws, SiJson, SiApollographql, SiGraphql, SiHtml5, SiCss3, SiGo, SiBootstrap, SiNetlify, SiVuedotjs, SiAngular, SiRedux, SiVercel, SiMaterialdesign, SiGradle, SiApachemaven, SiUnity, SiFirebase, SiExpress} from "@icons-pack/react-simple-icons";
-import { ThemeContext } from "styled-components";
-import Footer from "./Footer";
+import  {SiReact,SiKotlin, SiC, SiCplusplus, SiPython, SiRuby, SiJavascript, SiPhp, SiAssemblyscript, SiCsharp, SiSwift, SiDart, SiTypescript, SiRust , SiCoffeescript, SiMysql, SiMongodb, SiPostgresql, SiAndroid, SiNodedotjs, SiIos, SiFlutter, SiElectron, SiNextdotjs, SiAndroidstudio, SiGit, SiDocker, SiGooglecloud, SiAmazonaws, SiJson, SiGraphql, SiHtml5, SiCss3, SiGo, SiBootstrap, SiNetlify, SiVuedotjs, SiAngular, SiRedux, SiVercel, SiMaterialdesign, SiGradle, SiApachemaven, SiUnity, SiFirebase, SiExpress} from "@icons-pack/react-simple-icons";
 
 const styles = {
     iconStyle: {
@@ -21,7 +18,7 @@ const styles = {
     }
 };
 
-const d = {
+const data = {
     intro: "I love to learn new things and experiment with new technologies.\nThese are some of the major languages, technologies, tools and platforms I have worked with:",
     skills: [{
      
@@ -234,9 +231,7 @@ const d = {
 ]};
 
 const Skills = (props) => {
-    const theme = useContext(ThemeContext);
     const {header} = props;
-    const [data,setData] = useState(d);
 
     const renderSkillsIntro = (intro) => (
         <h4 styles={styles.introText}>

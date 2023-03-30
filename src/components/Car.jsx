@@ -1,11 +1,9 @@
 import React from "react";
 import * as THREE from "three";
 import { useEffect } from "react";
-import { ThemeContext } from "styled-components";
 
 const CarFrame = () => {
 
-    const theme = React.useContext(ThemeContext);
 
     const canvasRef = React.useRef(null);
 

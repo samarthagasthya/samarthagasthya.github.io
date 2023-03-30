@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { Container, Row, Button } from 'react-bootstrap';
 import { ThemeContext } from 'styled-components';
 import PropTypes from 'prop-types';
@@ -6,7 +6,6 @@ import { Fade } from 'react-awesome-reveal';
 import Header from './Header';
 import ProjectCard from './ProjectCard';
 import FallbackSpinner from './FallbackSpinner';
-import Footer from './Footer';
 
 const styles = {
   containerStyle: {
@@ -17,7 +16,7 @@ const styles = {
   },
 };
 
-const d = {
+const data = {
   projects : [
       {
           image : "https://github.com/JohnX4321/covid_tracker/blob/main/app6.png?raw=true",
@@ -129,7 +128,6 @@ const d = {
 const Projects = (props) => {
   const theme = useContext(ThemeContext);
   const { header } = props;
-  const [data, setData] = useState(d);
   const [showMore, setShowMore] = useState(false);
 
   
