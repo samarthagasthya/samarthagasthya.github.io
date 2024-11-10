@@ -22,7 +22,7 @@ const styles = {
 };
 
 const data = {
-    about: "Currently working as Software Engineer @ Ather. \n\n Graduate in Electronics & Communications Engineering from DSCE, VTU. \n\n Frontend and Mobile Development hobbyist \n\n",
+    about: "Currently working as Software Engineer @ Ather. \n\n Graduate in Electronics & Communications Engineering from DSCE, VTU. \n\n Fullstack, Mobile and embedded systems Development hobbyist \n\n",
     imageSource: "images/about/profile.jpg"
 }
 

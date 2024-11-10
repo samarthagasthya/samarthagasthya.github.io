@@ -1,4 +1,4 @@
-import * as Typewriter from "react-effect-typewriter";
+import {Typewriter} from "../lib/typewriter/components/Typewriter.tsx";
 import {Fade} from "react-bootstrap";
 import Social from "./Social.tsx";
 import FallbackSpinner from "./FallbackSpinner.tsx";
@@ -36,12 +36,10 @@ const Home = () => {
                         <h3>{data?.subheader}</h3>
                         <div style={{flexDirection: "row"}}>
                             <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
-                            <Typewriter.Paragraph
-                                style={{color: "white"}}
-                                loop={true}
-                                autoPlay={true}>
-                                {data?.roles}
-                            </Typewriter.Paragraph>
+                            <Typewriter words={data?.roles}
+                                        loop={true}
+                                        cursorColor="white"
+                                        cursor />
                         </div>
                         <Social/>
                     </div>
