@@ -1,6 +1,4 @@
-import {useContext} from "react";
 import {SocialIcon} from "react-social-icons"
-import {ThemeContext} from "styled-components";
 
 const data = {
     social: [
@@ -24,7 +22,6 @@ const data = {
 };
 
 const Social = () => {
-    const theme = useContext(ThemeContext);
     return (
         <div className="social">
             {data ? data.social.map((s) => (
